@@ -1,0 +1,136 @@
+body{
+	background:
+		url('https://www.sbp.org/uploaded/Migration_Images_and_Documents_2017/About_SBP/photo73333173.gif') ,
+		linear-gradient(270deg,darkgrey,#9A2A2A);
+	background-size:100%,cover;
+	height:100%;
+	}
+
+.navbar{
+	width:95%;
+	height: 80px;
+	/*background: linear-gradient(to top, #808080, black);*/
+	background-color: #000;
+	position:
+	absolute;
+	top:2.5%;
+	left:2.5%;
+	display: flex;
+	z-index:10000;
+	border-radius:40px;
+}
+
+.navbar a{
+	text-decoration:
+	none;
+	color:
+	black;
+	text-shadow: 5px 5px 10px #9a2a2a;
+}
+
+#logo{
+	width:80px;
+	height:80px;
+	right: 5px;
+	position: absolute;
+}
+
+
+
+.btnMenu{
+	height: 45px;
+	width: 60px;
+	position:absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.checkbox{
+	position:absolute;
+	height: 60px;
+	width: 60px;
+	top: 20px;
+	left: 20px;
+	z-index: 10000;
+	opacity:0;
+	cursor: pointer;
+}
+
+.line{
+	display: block;
+	height: 5px;
+	width: 40px;
+	border-radius: 10px;
+	background-color: #dcdcdc;
+}
+.navbar .btnMenu .menuLn1{
+	transform-origin: 0% 0%;
+	transition: transform 0.4s ease-in-out;
+}
+
+.navbar .btnMenu .menuLn2{
+	transition: transform 0.2s ease-in-out;
+}
+
+.navbar .btnMenu .menuLn3{
+	transform-origin: 0% 100%;
+	transition: transform 0.4s ease-in-out;
+}
+
+.menu_items{
+	padding-top:80px;
+	background-color: #efefef;
+	box-shadow: inset 0 0 2000px rgba(255,255,255,.5);
+	height:100vh;
+	width:75%;
+	transform: translate(-150%);
+	display: flex;
+	flex-direction: column;
+	margin-left:-40px;
+	transition: transform 0.5s ease-in-out;
+	text-align: center;
+	/* z-index: 20000; */
+}
+
+.menu_items li{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:500;
+	font-size:48pt;
+	list-style:
+	none;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height:12.5%;
+	text-align:
+	center;
+	border: 2px solid black;
+	padding-top: 0;
+	border-right: 25px solid #9A2A2A; 
+	border-bottom: none;
+}
+
+
+#overlay{
+    background:#000;
+    opacity:0.5;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:9999; /* may not be necessary */
+}
+
+.display_panel{
+	display:flex;
+	width:100%;
+	height:100%;
+	z-index:15000;
+}

@@ -1,0 +1,42 @@
+h1{
+    color:#000;
+}
+#tags{
+    background-color: #dcdcdc;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:scroll;
+}
+.tags{
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+    height: 80%;
+    margin:auto;
+    flex-direction:column;
+}
+.tag{
+    font-size:medium;
+    width: -moz-fit-content;
+    width:fit-content;
+    height: 3.0em;
+    background-color: #9a2a2a;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15%;
+    margin:1%;
+}
+
+.tag:hover, .selected{
+    background-color: #d97373;
+}

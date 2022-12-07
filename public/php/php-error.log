@@ -1,0 +1,97 @@
+[27-Sep-2022 22:02:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\SBP Portal\php\login.php:60
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(11): uploadProfilePic()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 60
+[27-Sep-2022 22:10:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\SBP Portal\php\login.php:61
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(12): uploadProfilePic()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 61
+[28-Sep-2022 19:37:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\SBP Portal\php\login.php:61
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(12): uploadProfilePic()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 61
+[28-Sep-2022 19:42:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\SBP Portal\php\login.php:60
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(11): uploadProfilePic()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 60
+[28-Sep-2022 19:44:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\SBP Portal\php\login.php:62
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(13): uploadProfilePic()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 62
+[28-Sep-2022 19:58:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant 'n' in C:\xampp\htdocs\SBP Portal\php\login.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SBP Portal\php\login.php(5): login()
+#1 {main}
+  thrown in C:\xampp\htdocs\SBP Portal\php\login.php on line 27
+[05-Oct-2022 22:26:23 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[05-Oct-2022 22:28:26 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[05-Oct-2022 22:31:43 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[06-Oct-2022 20:01:24 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[06-Oct-2022 20:04:11 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[06-Oct-2022 20:16:18 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 19:38:52 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 19:39:02 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\SBP Portal\php\tags.php on line 14
+[07-Oct-2022 19:39:02 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\SBP Portal\php\tags.php on line 14
+[07-Oct-2022 19:39:02 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\SBP Portal\php\tags.php on line 14
+[07-Oct-2022 19:39:04 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\SBP Portal\php\tags.php on line 36
+[07-Oct-2022 19:59:11 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[07-Oct-2022 20:01:10 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[07-Oct-2022 20:03:18 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 8
+[07-Oct-2022 20:04:33 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 8
+[07-Oct-2022 20:05:15 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:06:19 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:06:42 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:07:58 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:08:37 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:11:06 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:13:37 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:14:55 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 10
+[07-Oct-2022 20:16:18 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[07-Oct-2022 20:18:14 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[12-Oct-2022 20:01:11 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[12-Oct-2022 20:03:44 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[12-Oct-2022 20:05:35 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[12-Oct-2022 20:07:18 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:09:41 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:39:52 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:40:51 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:46:08 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:49:22 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:52:44 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 19:53:43 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:03:52 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:05:38 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:06:25 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:09:01 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:10:02 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:11:46 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:13:15 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:23:36 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:25:14 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:26:10 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:28:35 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:29:48 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 20:31:33 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:01:40 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:07:44 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:09:04 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:10:31 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:12:30 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:13:47 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:15:47 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[13-Oct-2022 21:29:29 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[17-Oct-2022 20:58:05 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[17-Oct-2022 21:26:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[17-Oct-2022 21:55:06 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[19-Oct-2022 16:00:13 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[19-Oct-2022 17:59:56 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[27-Oct-2022 01:34:18 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[07-Nov-2022 19:53:08 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
+[07-Nov-2022 21:45:15 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\graybee-network\public\php\tags.php on line 9
+[07-Nov-2022 21:47:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\graybee-network\public\php\tags.php on line 9

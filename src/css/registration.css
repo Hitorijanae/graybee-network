@@ -1,0 +1,60 @@
+#registration_pane{
+    background:#000;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    z-index:9999; /* may not be necessary */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+    background-color: #dcdcdc;
+    overflow: hidden;
+}
+
+.menuLn1{
+    background-color: #000;
+}
+
+.menuLn2{
+    background-color: #000;
+}
+
+.menuLn3{
+    background-color: #000;
+}
+
+#registration_box{
+    width: 80%;
+    height: 80%;
+    background-color: #dcdcdc;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#formlogo{
+    height: 150px;
+    width: 150px;
+}
+form{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+#pictureForm{
+    width: 80%;
+    height: 80%;
+    background-color: #dcdcdc;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

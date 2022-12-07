@@ -1,0 +1,101 @@
+$(document).ready(function(){
+    console.log("JQuery Loaded Succesfully!");
+});
+
+function loadLogin(){
+    if(!$(".display_panel").hasClass("login")){
+        $(".display_panel").load("htm/login.htm");
+        $(".display_panel").addClass("login");
+        $(".display_panel").removeClass("profile");
+        $(".display_panel").removeClass("messages");
+        $(".display_panel").removeClass("friends");
+        $("#overlay").slideToggle('slow');
+        //$("#display_panel").slideToggle('slow');
+        $(".menu_items").css("transform","translate(-150%)");
+        $(".menu_items").removeClass("expanded");
+
+    }
+}
+
+function loadProfile(){
+    if(!$(".display_panel").hasClass("profile")){
+        $(".display_panel").load("htm/profile.htm");
+        $(".display_panel").addClass("profile");
+        $(".display_panel").removeClass("login");
+        $(".display_panel").removeClass("messages");
+        $(".display_panel").removeClass("friends");
+        $("#overlay").slideToggle('slow');
+        //$("#display_panel").slideToggle('slow');
+        $(".menu_items").css("transform","translate(-150%)");
+        $(".menu_items").removeClass("expanded");
+    }
+}
+
+function loadMessages(){
+    if(!$(".display_panel").hasClass("messages")){
+        $(".display_panel").load("htm/messages.htm");
+        $(".display_panel").addClass("messages");
+        $(".display_panel").removeClass("profile");
+        $(".display_panel").removeClass("login");
+        $(".display_panel").removeClass("friends");
+        $("#overlay").slideToggle('slow');
+        //$("#display_panel").slideToggle('slow');
+        $(".menu_items").css("transform","translate(-150%)");
+        $(".menu_items").removeClass("expanded");
+    }
+}
+
+function loadFriends(){
+    if(!$(".display_panel").hasClass("friends")){
+        $(".display_panel").load("htm/friends.htm");
+        $(".display_panel").addClass("friends");
+        $(".display_panel").removeClass("profile");
+        $(".display_panel").removeClass("messages");
+        $(".display_panel").removeClass("login");
+        $("#overlay").slideToggle('slow');
+        //$("#display_panel").slideToggle('slow');
+        $(".menu_items").css("transform","translate(-150%)");
+        $(".menu_items").removeClass("expanded");
+    }
+}
+
+function burgerAnim(){
+    if($(".menu_items").hasClass("expanded")){
+        $(".menuLn1").removeAttr("style");
+        $(".menuLn2").removeAttr("style");
+        $(".menuLn3").removeAttr("style");
+    }
+    else{
+        $(".menuLn1").css("transform", "rotate(45deg)");
+	    $(".menuLn1").css("background-color","#000");
+	    $(".menuLn1").css("width","56.57px");
+
+        $(".menuLn2").css("transform","scaleY(0)");
+	    $(".menuLn2").css("background-color","#000");
+
+        $(".menuLn3").css("transform", "rotate(-45deg)");
+	    $(".menuLn3").css("background-color","#000");
+	    $(".menuLn3").css("width","56.57px");
+    }
+}
+
+
+function hamburgerMenu(bool){
+    if(!$(".menu_items").hasClass("expanded")&&typeof bool=='undefined'){
+        bool = true;
+        $(".menu_items").css("transform", "translateX(0)");
+        burgerAnim();
+        $(".menu_items").addClass("expanded");
+
+    }
+    else if($(".menu_items").hasClass("expanded")){
+        $(".menu_items").css("transform","translate(-150%)");
+        burgerAnim();
+        $(".menu_items").removeClass("expanded");
+    }
+    $("#overlay").slideToggle("slow");
+    
+}
+function jumpToPhoto(){
+    $(".display_panel").load("php/uploadProfilePic.php");
+}

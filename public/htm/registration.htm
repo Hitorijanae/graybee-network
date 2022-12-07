@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="../src/css/registration.css"/>
+        <script type="text/javascript" src="../src/registration.js"></script>
+    </head>
+    <div id="registration_pane">
+        <div id="registration_box">
+            <img id="formlogo" src="assets/Official_Alumni_Association_Logo_11-17-20.png" alt="Alumni Association Logo">
+            <form id="registration_form">
+                <input type="text" id="fname" placeholder="First Name" autocomplete="given-name"/>
+                <input type="text" id="lname" placeholder="Last Name" autocomplete="family-name"/>
+                <input type="email" id="email" placeholder="Email Address" autocomplete="email"/>
+                <input type="email" id="confirm_email" placeholder="Confirm Email Address" autocomplete="email"/>
+                <input type="text" id="uname" placeholder="Username" autocomplete="current-user"/>
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password"/>
+                <input type="password" id="confirm_password" placeholder="Confirm Password"/>
+                <select title="classyear" id="class_year">
+                    <option value="">Class Year</option>
+                    </select>
+                <input type="submit" placeholder="Sign Up" value="Sign Up!"/>
+            </form>
+        </div>  
+    </div>
+</html>

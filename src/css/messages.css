@@ -1,0 +1,28 @@
+#messages_pane{
+    background:#000;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    z-index:9999; /* may not be necessary */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+    background-color: #dcdcdc;
+}
+
+.menuLn1{
+    background-color: #000;
+}
+
+.menuLn2{
+    background-color: #000;
+}
+
+.menuLn3{
+    background-color: #000;
+}

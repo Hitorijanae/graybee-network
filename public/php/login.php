@@ -7,21 +7,26 @@ $fname = $_POST["fname"];
 $lname = $_POST["lname"];
 $email = $_POST["email"];
 $classyear = $_POST["classyear"];
+
 if($opcode == 0){
+    session_start();
     login();
 }
 elseif($opcode == 1){
     register();
+    
 }
 elseif($opcode == 2){
     
     uploadProfilePic();
+    
 }
 elseif($opcode == 3){
     getClassYears();
 }
 else{
     echo "Invalid opcode";
+    print_r($_POST);
 }
 
 function login(){
@@ -63,6 +68,12 @@ function register(){
     $hashword = password_hash($pword,PASSWORD_BCRYPT);
     //echo $pword."\n".var_dump($hashword)."\n";
     $_SESSION['pword'] = $hashword;
+    if(isset($_SESSION)){
+        echo 1;
+    }
+    else{
+        echo 0;
+    }
 
 }
 

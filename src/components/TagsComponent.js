@@ -1,6 +1,7 @@
 import React from  'react' ;
 import $ from  'jquery' ;
 import "../css/tags.css" ;
+import axios from  'axios' ;
 
 let tags = {};
 
@@ -42,23 +43,36 @@ class TagsComponent extends React.Component{
  *
  */
 sendTags() {
-
+  tags.opcode = 1;
   const json = JSON.stringify( tags );
-    fetch('php/tags.php', {
+    /*fetch('php/tags.php', {
         method: 'POST',
         body: json
         }).then(function(response) {
             if(response.ok) {
                 window.location.href="http://localhost:3000/feed.htm";
             }
-        });
+        });*/
+    return(axios.post('http://localhost/php/tags.php', json, {
+      headers: {  'Content-Type': 'application/json'  },
+      withCredentials: true,
+    })
+    
+  )}
+
+  loadFeed = async(e) =>{
+    e.preventDefault();
+    let response = await this.sendTags();
+    if(response.data === 1){
+        window.location.href = "http://localhost:3000/feed.htm";
     }
+  }
 
     render(){
         return(
             <div id="tags">
                 <div className="tagHeader">
-                    <div id="done" onClick={this.sendTags}>Done</div>
+                    <div id="done" onClick={this.loadFeed}>Done</div>
                 </div>
                 <div className="tags"></div>
                 
@@ -90,8 +104,16 @@ sendTags() {
             document.querySelector( ".tags" ).appendChild( tags );
 
 
-        }
-          });
+          }
+    });
+    $(".navbar").css("display", "none");
+    $("#done").css({"float": "right", "margin-right": "10px", "margin-top": "10px", "color": "black", "font-size": "20px", "cursor": "pointer", "border":"2px solid black", "border-radius": "5px", "padding": "5px"});
+    $("#done").hover(function(){
+      $(this).css({"background-color": "black", "color": "white"});
+    }, function(){
+      $(this).css({"background-color": "#dcdcdc", "color": "black"});
+    });
+      
     }
 }
 export default TagsComponent;

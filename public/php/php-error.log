@@ -95,3 +95,9 @@ Stack trace:
 [07-Nov-2022 19:53:08 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\SBP Portal\php\tags.php on line 9
 [07-Nov-2022 21:45:15 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\graybee-network\public\php\tags.php on line 9
 [07-Nov-2022 21:47:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\graybee-network\public\php\tags.php on line 9
+[06-Dec-2022 20:58:26 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 9
+[06-Dec-2022 21:16:52 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 11
+[06-Dec-2022 21:16:52 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 11
+[06-Dec-2022 21:17:05 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 11
+[06-Dec-2022 21:17:05 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 11
+[06-Dec-2022 21:18:13 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\php\tags.php on line 11

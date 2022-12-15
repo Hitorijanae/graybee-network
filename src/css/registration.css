@@ -11,10 +11,10 @@
     align-items: center;
     flex-direction: column;
 }
-.navbar{
+/*.navbar{
     background-color: #dcdcdc;
     overflow: hidden;
-}
+}*/
 
 .menuLn1{
     background-color: #000;
@@ -39,8 +39,8 @@
 }
 
 #formlogo{
-    height: 150px;
-    width: 150px;
+    height: 25vw;
+    width: 25vw;
 }
 form{
     display:flex;

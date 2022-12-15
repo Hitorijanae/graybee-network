@@ -29,8 +29,8 @@
 }
 
 .credentials{
-    width:40%;
-    margin-bottom:25px;
+    width:40vw;
+    margin-bottom:1vh;
     opacity:.75;
     border:2px solid #9a2a2a;
     text-align:center;
@@ -54,6 +54,6 @@ a{
     color:#9a2a2a;
 }
 #loginLogo{
-    width: 25%;
-    height: 25%;
+    width: 25vw;
+    height: 25vw;
 }

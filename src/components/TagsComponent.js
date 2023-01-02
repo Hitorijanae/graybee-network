@@ -29,6 +29,7 @@ function selectTag( t ) {
     }
   
     console.log( tags );
+    window.sessionStorage.setItem("tags", JSON.stringify(tags));
   
   }
 class TagsComponent extends React.Component{
@@ -43,8 +44,11 @@ class TagsComponent extends React.Component{
  *
  */
 sendTags() {
-  tags.opcode = 1;
-  const json = JSON.stringify( tags );
+  tags=JSON.parse(window.sessionStorage.getItem("tags"));
+  
+  //tags.opcode = 1;
+  console.log(tags);
+  //const json = JSON.stringify( tags );
     /*fetch('php/tags.php', {
         method: 'POST',
         body: json
@@ -53,8 +57,11 @@ sendTags() {
                 window.location.href="http://localhost:3000/feed.htm";
             }
         });*/
-    return(axios.post('http://localhost/php/tags.php', json, {
-      headers: {  'Content-Type': 'application/json'  },
+    const formdatum = new FormData();
+    formdatum.append("opcode", 1);
+    formdatum.append("json", JSON.stringify(tags));
+    return(axios.post('http://localhost/tags.php', formdatum, {
+      headers: {  'Content-Type': 'multipart/form-data', },
       withCredentials: true,
     })
     
@@ -83,7 +90,7 @@ sendTags() {
     componentDidMount(){
       let formdatum = new FormData();
       formdatum.append("opcode", 0);
-      fetch('http://localhost/php/tags.php', {
+      fetch('http://localhost/tags.php', {
           method: 'POST',
           body: formdatum,
         }).then(response => response.json()).then(data =>{

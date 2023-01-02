@@ -25,7 +25,7 @@ function validate(){
 
 function loginRequest(){
     $.ajax({
-        url: '/php/login.php',
+        url: 'login.php',
         type: 'post',
         data: {uname:uname, pword:pword},
         success: function(response){

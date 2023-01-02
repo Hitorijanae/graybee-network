@@ -73,7 +73,7 @@ class RegistrationUploaderComponent extends React.Component {
             }
         });*/
         return(axios
-        .post("http://localhost/php/login.php", formDatum, {
+        .post("http://localhost/login.php", formDatum, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },

@@ -142,7 +142,7 @@ class RegistrationComponent extends React.Component{
       formDatum.append("validation", 1);
       formDatum.append("opcode", 1);
       return(axios
-      .post("http://localhost/php/login.php", formDatum, {
+      .post("http://localhost/login.php", formDatum, {
         headers: {
           'Content-Type': 'multipart/form-data',
         
@@ -197,7 +197,7 @@ class RegistrationComponent extends React.Component{
             }
         });*/
         axios
-        .post("http://localhost/php/login.php", opcode, {
+        .post("http://localhost/login.php", opcode, {
           headers: {
             'Content-Type': 'multipart/form-data',
           }

@@ -126,3 +126,12 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 25
+[10-Jan-2023 22:03:52 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\Users\j_b_l\graybee-network\public\php\login.php on line 126
+[10-Jan-2023 22:05:16 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\Users\j_b_l\graybee-network\public\php\login.php on line 127
+[10-Jan-2023 22:06:23 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\Users\j_b_l\graybee-network\public\php\login.php on line 127
+[10-Jan-2023 22:12:09 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\Users\j_b_l\graybee-network\public\php\login.php on line 127
+[10-Jan-2023 22:22:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class mysqli_result could not be converted to string in C:\Users\j_b_l\graybee-network\public\php\login.php:126
+Stack trace:
+#0 C:\Users\j_b_l\graybee-network\public\php\login.php(27): getAvatar()
+#1 {main}
+  thrown in C:\Users\j_b_l\graybee-network\public\php\login.php on line 126

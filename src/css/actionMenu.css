@@ -1,0 +1,13 @@
+.actionMenu__item{
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    text-align: center;
+}
+img{
+    width: 85%;
+    height: 85%;
+    margin:auto;
+    border-radius: 50%;
+}

@@ -7,7 +7,6 @@ $fname = $_POST["fname"];
 $lname = $_POST["lname"];
 $email = $_POST["email"];
 $classyear = $_POST["classyear"];
-
 if($opcode == 0){
     session_start();
     login();
@@ -23,6 +22,9 @@ elseif($opcode == 2){
 }
 elseif($opcode == 3){
     getClassYears();
+}
+elseif($opcode == 4){
+    getAvatar();
 }
 else{
     echo "Invalid opcode";
@@ -42,7 +44,7 @@ function login(){
     $hashword = $row['pword'];
     if(password_verify($pword,$hashword)){
         $_SESSION['uname'] = $uname;
-        echo 1;
+        getAvatar();
     }
     else{
         echo 0;
@@ -115,4 +117,12 @@ function getClassYears(){
     $result = mysqli_query($con,$sql_query);
     $arr = mysqli_fetch_all($result);
     echo json_encode($arr);
+}
+function getAvatar(){
+    global $con;
+    global $uname;
+    $sql_query = "SELECT * FROM Members WHERE uname='$uname'";
+    $result = mysqli_query($con,$sql_query);
+    $row=mysqli_fetch_array($result);
+    echo ("DONE " . $row['filepath']);
 }

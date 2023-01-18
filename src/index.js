@@ -8,6 +8,7 @@ import LoginComponent from './components/LoginComponent';
 import RegistrationComponent from './components/RegistrationComponent';
 import TagsComponent from './components/TagsComponent';
 import RegistrationUploaderComponent from './components/RegistrationUploaderComponent';
+import FeedComponent from './components/FeedComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Route path="/register.htm" element={<RegistrationComponent />}></Route>
         <Route path="/tags.htm" element={<TagsComponent />}></Route>
         <Route path="/uploadPic.htm" element={<RegistrationUploaderComponent />}></Route>
+        <Route path="/feed.htm" element={<FeedComponent />}></Route>
       </Routes>
     </Router>
     <App />

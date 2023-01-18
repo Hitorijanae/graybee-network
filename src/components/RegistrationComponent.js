@@ -141,7 +141,8 @@ class RegistrationComponent extends React.Component{
       formDatum.append("classyear", this.state.classyear);
       formDatum.append("validation", 1);
       formDatum.append("opcode", 1);
-      return(axios
+      return(
+      axios
       .post("http://localhost/login.php", formDatum, {
         headers: {
           'Content-Type': 'multipart/form-data',
@@ -196,8 +197,7 @@ class RegistrationComponent extends React.Component{
                 document.getElementById("class_year").innerHTML += appendix;
             }
         });*/
-        axios
-        .post("http://localhost/login.php", opcode, {
+        axios.post("http://localhost/login.php", opcode, {
           headers: {
             'Content-Type': 'multipart/form-data',
           }

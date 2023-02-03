@@ -3,6 +3,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import SendIcon from '@mui/icons-material/Send'
 import React from "react";
 import $ from 'jquery';
+import PostTagComponent from "./PostTagComponent";
+import "../css/postDialog.css";
+import axios from "axios";
 class PostDialogComponent extends React.Component {
 
   constructor( props ) {
@@ -11,10 +14,12 @@ class PostDialogComponent extends React.Component {
 
     this.state = {
       uname: localStorage.getItem( "uname" ),
-      avatarURL: "http://localhost/uploads/" + sessionStorage.getItem("avatar")
+      avatarURL: "http://localhost/uploads/" + sessionStorage.getItem("avatar"),
+      tagging: false
       
     };
     this.handlePost.bind(this);
+    this.handleSend.bind(this);
     this.handleClose = this.handleClose.bind(this);
     
   }
@@ -24,48 +29,59 @@ class PostDialogComponent extends React.Component {
   
   handlePost = () => {
     sessionStorage.setItem("postText", document.getElementById("postText").value);
+    sessionStorage.setItem("postTitle", document.getElementById("postTitle").value);
+    this.handleSend();
+    //this.setState({tagging: true});
   }
+  handleSend = () => {
+    let postText = sessionStorage.getItem("postText");
+    let postTitle = sessionStorage.getItem("postTitle");
+    let formDatum = new FormData();
+    formDatum.append("opcode", 1);
+    formDatum.append("postText", postText);
+    formDatum.append("postTitle", postTitle);
+    //formDatum.append("tagged", sessionStorage.getItem("tagged"));
+    axios.post("http://localhost/post.php", formDatum, {
+      headers: {  'Content-Type': 'multipart/form-data' },
+      withCredentials: true}).then(response => {
+        console.log(response.data);
+        this.handleClose();
+      });
+    }
+
   render(){
-    
-    
-      
+    if(!this.state.tagging){
       return(
         <Dialog 
-        open={this.props.visible} 
+          open={this.props.visible} 
 
-        TransitionComponent={Slide}
+          //TransitionComponent={Slide}
+          onClose={this.handleClose}
         >
-          <DialogContent>
-            <DialogTitle id="postDialogHeader" sx={
-              {
-                position: "relative",
-                
-              }
-            }>
-              Post
-              <IconButton aria-label="close" id="closePostDialog" onClick={this.handleClose} sx={
+          <DialogTitle id="postDialogHeader" sx={
+            {
+              position: "relative",
+              
+            }
+          }>
+            Post
+            <IconButton aria-label="close" id="closePostDialog" onClick={this.handleClose} sx={
                 {
                   top: 8,
                   right: 8,
                   position: "absolute"
                 }
               }
-              >
-                <CloseIcon />
-              </IconButton>
-            </DialogTitle>
-            <DialogContentText>
-              
-              </DialogContentText>
-              <TextField
-                autoCapitalize="true"
-                autoFocus
-                id="postText"
-                label="What did you want to say?"
-                margin="dense"
-                multiline
-                />
+            >
+              <CloseIcon />
+            </IconButton>
+          </DialogTitle>
+
+          <DialogContent>
+            <TextField autoFocus id="postTitle" label="Title" margin="dense" inputProps={{minLength:1, maxLength:16}} sx={{"width":"100%"}}/>
+            <TextField autoCapitalize="true" autoFocus id="postText" label="What did you want to say?" margin="dense" multiline minRows={5} sx={{"width":"100%"}}/>
           </DialogContent>
+
           <DialogActions>
             <Avatar src={this.state.avatarURL} sx={
               {
@@ -76,9 +92,27 @@ class PostDialogComponent extends React.Component {
             }/>
             <Button variant="contained" endIcon={<SendIcon />} onClick={this.handlePost}>Post</Button>
           </DialogActions>
+
         </Dialog>
       )
-  }
+    }
+    else{
+      return(
+        <Dialog  open={this.state.tagging} TransitionComponent={Slide}>
+          <DialogTitle sx={{position:"relative"}}>Tag your post!</DialogTitle>
+          <DialogContent>
+            <PostTagComponent setter={this.props.setter} />
+          </DialogContent>
+          <DialogActions>
+            <Avatar src={this.state.avatarURL} sx={{position:"absolute", left:8, bottom:8}} />
+            <Button onClick={this.handleClose}>Cancel</Button>
+            <Button onClick={this.handleSend}>Send</Button>
+          </DialogActions>
+
+        </Dialog>
+      )
+    }
+}
 
   /*render() {
 

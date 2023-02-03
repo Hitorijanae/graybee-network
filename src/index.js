@@ -9,11 +9,11 @@ import RegistrationComponent from './components/RegistrationComponent';
 import TagsComponent from './components/TagsComponent';
 import RegistrationUploaderComponent from './components/RegistrationUploaderComponent';
 import FeedComponent from './components/FeedComponent';
+import PostTagComponent from './components/PostTagComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<App />}></Route>
@@ -22,10 +22,11 @@ root.render(
         <Route path="/tags.htm" element={<TagsComponent />}></Route>
         <Route path="/uploadPic.htm" element={<RegistrationUploaderComponent />}></Route>
         <Route path="/feed.htm" element={<FeedComponent />}></Route>
+        <Route path="/test.htm" element={<PostTagComponent />}></Route>
       </Routes>
+      <App />
     </Router>
-    <App />
-  </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

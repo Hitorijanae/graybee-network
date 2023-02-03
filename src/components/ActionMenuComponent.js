@@ -2,7 +2,7 @@ import React from "react";
 import $ from 'jquery';
 import "../css/actionMenu.css";
 import PostDialogComponent from "./PostDialogComponent";
-import { ButtonGroup, Fab} from "@mui/material";
+import { ButtonGroup, Fab, Slide} from "@mui/material";
 import UpwardArrowIcon from "@mui/icons-material/ArrowUpward";
 import AddAPhoto from "@mui/icons-material/AddAPhoto";
 import AddIcon from "@mui/icons-material/Add";
@@ -22,6 +22,7 @@ class ActionMenuComponent extends React.Component {
     }
     setAction = (newAction) => {
         this.setState({action: newAction});
+        console.log("Action set to " + newAction);
     }
     toggleMenu(){
         this.setState({expanded: !this.state.expanded});
@@ -50,8 +51,8 @@ class ActionMenuComponent extends React.Component {
                             <AddAPhoto />
                         </Fab>
 
-                        <Fab color="primary" aria-label="post" id="post" onClick={this.setAction}>
-                            <PostDialogComponent visible={true} setter={this.setState} />
+                        <Fab color="primary" aria-label="post" id="post">
+                            <PostDialogComponent visible={true} setter={this.setAction} />
                             <UpwardArrowIcon />
                         </Fab>
 
@@ -66,19 +67,19 @@ class ActionMenuComponent extends React.Component {
                 return(
                     <ButtonGroup orientation="vertical" sx={sx}>
 
-                        <Fab color="primary" aria-label="message" id="message" onClick={this.setAction}>
+                        <Fab color="primary" aria-label="message" id="message">
                             <MessageComponent visible={false} setter={this.setAction} />
                             <Message />
                         </Fab>
 
 
-                        <Fab color="primary" aria-label="photo" id="photo" onClick={this.setAction}>
-                            <PhotoDialogComponent visible={true} setter={this.setState} />
+                        <Fab color="primary" aria-label="photo" id="photo">
+                            <PhotoDialogComponent visible={true} setter={this.setAction} />
                             <AddAPhoto />
                         </Fab>
 
-                        <Fab color="primary" aria-label="post" id="post" onClick={this.setAction}>
-                            <PostDialogComponent visible={false} setter={this.setState} />
+                        <Fab color="primary" aria-label="post" id="post">
+                            <PostDialogComponent visible={false} setter={this.setAction} />
                             <UpwardArrowIcon />
                         </Fab>
 
@@ -98,13 +99,13 @@ class ActionMenuComponent extends React.Component {
                             <Message />
                         </Fab>
 
-                        <Fab color="primary" aria-label="photo" id="photo" onClick={this.setAction}>
-                            <PhotoDialogComponent visible={false} setter={this.setState} />
+                        <Fab color="primary" aria-label="photo" id="photo">
+                            <PhotoDialogComponent visible={false} setter={this.setAction} />
                             <AddAPhoto />
                         </Fab>
 
-                        <Fab color="primary" aria-label="post" id="post" onClick={this.setAction}>
-                            <PostDialogComponent visible={false} setter={this.setState} />
+                        <Fab color="primary" aria-label="post" id="post">
+                            <PostDialogComponent visible={false} setter={this.setAction} />
                             <UpwardArrowIcon />
                         </Fab>
 

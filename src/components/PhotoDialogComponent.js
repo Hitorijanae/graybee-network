@@ -27,15 +27,17 @@ class PhotoDialogComponent extends React.Component {
             for(let i = 0; i < input.target.files.length; i++){
                 this.state.photos.push(input.target.files[i]);
             }
+            this.setState({hasInput: true});
         }
-        this.setState({hasInput: true});
+
     }
     render(){
         if(!this.state.hasInput){
             return(
                 <Dialog
                 open={this.props.visible}
-                TransitionComponent={Slide}>
+                TransitionComponent={Slide}
+                onClose={this.handleClose}>
                     <DialogTitle>Upload a pic or two!
                         <IconButton aria-label="close" id="closePostDialog" onClick={this.handleClose} sx={
                             {
@@ -70,7 +72,8 @@ class PhotoDialogComponent extends React.Component {
             return(
                 <Dialog
                 open={this.props.visible}
-                TransitionComponent={Slide}>
+                TransitionComponent={Slide}
+                onClose={this.handleClose}>
                     <DialogTitle>Upload a pic or two!
                         <IconButton aria-label="close" id="closePostDialog" onClick={this.handleClose} sx={
                             {

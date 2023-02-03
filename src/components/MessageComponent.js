@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import {Dialog, DialogTitle, DialogContent, DialogActions, Button, TextField, Typography, Slide, Avatar} from '@mui/material';
 
-class PostDialogComponent extends React.Component {
+class MessageComponent extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -12,7 +12,9 @@ class PostDialogComponent extends React.Component {
             uname: localStorage.getItem( "uname" ),
             avatarURL: "http://localhost/uploads/" + sessionStorage.getItem("avatar")
         }
+        this.handleClose=this.handleClose.bind(this);
     }
+    
     handleClose = () => {
         this.props.setter({action:""});
     }
@@ -21,7 +23,7 @@ class PostDialogComponent extends React.Component {
     }
     render(){
         return(
-            <Dialog open={this.props.visible} TransitionComponent={Slide} onClose={this.props.handleClose}>
+            <Dialog open={this.props.visible} TransitionComponent={Slide} onClose={this.handleClose}>
                 <DialogTitle sx={{position:"relative"}}>Send a message!</DialogTitle>
                 <DialogContent>
                     <TextField id="destination" label="Destination" variant="outlined" fullWidth />
@@ -36,4 +38,4 @@ class PostDialogComponent extends React.Component {
         );
     }
 }
-export default PostDialogComponent;
+export default MessageComponent;

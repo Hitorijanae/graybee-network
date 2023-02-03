@@ -66,7 +66,8 @@ function loginRequest(){
         headers: {
             'Content-Type': 'multipart/form-data'
             },
-        timeout: 10000
+        timeout: 10000,
+        withCredentials: true
         }).then(
             response => {
                 console.log(response.data);

@@ -135,3 +135,95 @@ Stack trace:
 #0 C:\Users\j_b_l\graybee-network\public\php\login.php(27): getAvatar()
 #1 {main}
   thrown in C:\Users\j_b_l\graybee-network\public\php\login.php on line 126
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:31 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:32 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:47 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 21:44:47 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:36 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:40 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:40 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:40 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:41 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:42 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:42 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:42 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:46 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:48 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:49 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:50 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:50 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:20:52 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:01 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:02 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:07 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:07 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:13 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:20 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:20 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:20 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:25 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:28 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:28 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:28 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:28 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
+[18-Jan-2023 23:21:32 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ in C:\Users\j_b_l\graybee-network\public\php\tags.php on line 27
